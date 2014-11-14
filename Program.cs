@@ -4,7 +4,7 @@ namespace AopProxy
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var baseClass = AopProxyFactory.Create<BaseClass, LogAttribute>(
                 () => Console.WriteLine("Before"),
